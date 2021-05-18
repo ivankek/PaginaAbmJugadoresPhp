@@ -1,0 +1,32 @@
+body {
+
+    background-image: linear-gradient(rgba(101, 196, 255, 0.2), rgba(249, 253, 255, 0.55)), url("../img/cancha.png");
+);
+    background-repeat: no-repeat;
+
+    background-size: cover;
+
+}
+
+#buscar::placeholder {
+    color: #cccccc;
+    text-shadow: 0 0 5px black;
+}
+
+#buscador {
+    width: 50%;
+}
+
+
+@media (max-width: 1199.98px) {
+
+    #buscador {
+        width: 85%;
+    }
+
+    #buscar::placeholder {
+        color: white;
+        text-shadow: 0 0 5px black;
+    }
+
+}
