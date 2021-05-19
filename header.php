@@ -15,7 +15,7 @@
     <div class="container d-flex">
         <img style="width: 2em; height: 2em" class="me-2" src="img/pelota.png">
         <a class="navbar-brand">Selección Argentina</a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+        <button class="navbar navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
                 aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>

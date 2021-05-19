@@ -23,13 +23,13 @@
 
     <!-- Div Todos los jugadores y busqueda -->
 
-    <div id="hola" class="mt-5">
+    <div class="mt-5">
         <h3 class="text-center text-light">Todos los jugadores disponibles para que elijas</h3>
 
         <form class="d-flex mt-5 justify-content-center">
             <div id="buscador" class="input-group">
                 <input id="buscar" type="search" class="form-control"
-                       placeholder="Buscar jugador por nombre, posición o edad"
+                       placeholder="Buscar jugador por nombre, posición o número"
                        style="background-color: transparent; box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.65); border-color: transparent;">
                 <button type="submit" style="z-index: 100; box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.65);"
                         class="input-group-text" id="basic-addon1">
@@ -46,6 +46,38 @@
 
     <!-- Fin Div Todos los jugadores y busqueda -->
 
+    <!-- Div container lista de jugadores -->
+    <div class="container d-flex rounded flex-row mt-5 flex-wrap">
+
+        <!-- No hay resultados -->
+        <!--<h4 class="bg-light shadow p-5 rounded text-muted border border-1">No hay resultados</h4>-->
+        <!-- Fin no hay resultados -->
+
+        <!-- Div tarjeta -->
+        <div class="bg-light p-3 d-flex rounded border me-4 mt-4 flex-wrap">
+            <div class="me-4">
+                <img class="rounded-circle border" style="width: 10em" src="imgJugadores/fillol.jpg">
+            </div>
+            <div class="d-flex flex-column">
+                <div class="d-flex">
+                    <p class="text-dark mb-0">1&nbsp-&nbsp</p>
+                    <p class="text-dark fw-bolder mb-0">Ubaldo Fillol</p>
+                </div>
+
+                <img class="mt-2" style="width: 2em" src="imgPosicion/arquero.png">
+
+                <a class="mt-3 bg-dark text-decoration-none text-center text-light rounded">Perfil</a>
+                <a class="mt-2 bg-dark text-decoration-none text-center text-light rounded">Editar</a>
+                <a class="mt-2 bg-danger text-decoration-none text-center text-light rounded">Eliminar</a>
+
+            </div>
+        </div>
+
+        <!-- Fin Div tarjeta -->
+
+
+    </div>
+    <!-- Fin Container lista de jugadores -->
 
 
 </div>
