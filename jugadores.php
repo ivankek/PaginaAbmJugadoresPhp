@@ -47,18 +47,21 @@
     <!-- Fin Div Todos los jugadores y busqueda -->
 
     <!-- Div container lista de jugadores -->
-    <div class="container d-flex rounded flex-row mt-5 flex-wrap">
+    <div class="container d-flex rounded flex-row mt-5">
 
         <!-- No hay resultados -->
         <!--<h4 class="bg-light shadow p-5 rounded text-muted border border-1">No hay resultados</h4>-->
         <!-- Fin no hay resultados -->
 
         <!-- Div tarjeta -->
-        <div class="bg-light p-3 d-flex rounded border me-4 mt-4 flex-wrap">
+        <div id="tarjetaJugador" class="bg-light p-3 d-flex me-4 mt-4 flex-wrap">
+
             <div class="me-4">
-                <img class="rounded-circle border" style="width: 10em" src="imgJugadores/fillol.jpg">
+                <img id="imgJugador" class="rounded-circle border" src="imgJugadores/fillol.jpg">
             </div>
-            <div class="d-flex flex-column">
+
+            <div class="d-flex flex-column me-2">
+
                 <div class="d-flex">
                     <p class="text-dark mb-0">1&nbsp-&nbsp</p>
                     <p class="text-dark fw-bolder mb-0">Ubaldo Fillol</p>
@@ -71,6 +74,7 @@
                 <a class="mt-2 bg-danger text-decoration-none text-center text-light rounded">Eliminar</a>
 
             </div>
+
         </div>
 
         <!-- Fin Div tarjeta -->

@@ -17,8 +17,19 @@ body {
     width: 50%;
 }
 
+#imgJugador {
+    width: 10em;
+}
+
+#tarjetaJugador{
+    border-radius: 15px;
+    border-width: thin;
+    border-style: solid;
+    border-color: #d0f0ff;
+}
 
 @media (max-width: 1199.98px) {
+
 
     #buscador {
         width: 85%;
@@ -27,6 +38,10 @@ body {
     #buscar::placeholder {
         color: white;
         text-shadow: 0 0 5px black;
+    }
+
+    #imgJugador {
+        width: 6em;
     }
 
 }
