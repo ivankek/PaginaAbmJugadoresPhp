@@ -33,7 +33,7 @@
         <p class="text-light text-center mt-3 mt-lg-5g fs-5" style="text-shadow: 0 0 5px black;">Ingresá tus jugadores preferidos y armá tu selección preferida.</p>
         <p class="text-light text-center mt-3 fs-5" style="text-shadow: 0 0 5px black;">Buscá, modificá, eliminá los jugadores que quieras.</p>
 
-        <button type="button" class="container mt-4 btn btn-outline-light w-50">Ver Jugadores</button>
+        <a type="button" href="jugadores.php" class="container mt-4 btn btn-outline-light w-50">Ver Jugadores</a>
     </div>
 
 </div>

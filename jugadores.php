@@ -46,8 +46,29 @@
 
     <!-- Fin Div Todos los jugadores y busqueda -->
 
+
+    <!--Agregar jugador botón-->
+    <?php
+
+    if(isset($_SESSION["nombre"])){
+
+        echo "<div class='d-grid gap-2 col-6 mx-auto mt-5'>
+            <button class='btn btn-secondary' type='button' data-bs-toggle='modal' data-bs-target='#crearPokemon'>
+                Agregar Jugador <svg xmlns='http://www.w3.org/2000/svg' width='16' height='16' fill='currentColor' class='bi bi-plus' viewBox='0 0 16 16'>
+  <path d='M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z'/>
+</svg></button>
+        </div>";
+
+    }
+
+    ?>
+
+    <!--Fin agregar jugador botón-->
+
     <!-- Div container lista de jugadores -->
-    <div class="container d-flex rounded flex-row mt-5">
+    <div class="container d-flex rounded flex-row mt-4">
+
+
 
         <!-- No hay resultados -->
         <!--<h4 class="bg-light shadow p-5 rounded text-muted border border-1">No hay resultados</h4>-->
@@ -69,9 +90,18 @@
 
                 <img class="mt-2" style="width: 2em" src="imgPosicion/arquero.png">
 
+
                 <a class="mt-3 bg-dark text-decoration-none text-center text-light rounded">Perfil</a>
-                <a class="mt-2 bg-dark text-decoration-none text-center text-light rounded">Editar</a>
-                <a class="mt-2 bg-danger text-decoration-none text-center text-light rounded">Eliminar</a>
+
+                <?php
+                if (isset($_SESSION["nombre"])) {
+                    ?>
+                    <a class="mt-2 bg-dark text-decoration-none text-center text-light rounded">Editar</a>
+                    <a class="mt-2 bg-danger text-decoration-none text-center text-light rounded">Eliminar</a>
+
+                    <?php
+                }
+                ?>
 
             </div>
 
