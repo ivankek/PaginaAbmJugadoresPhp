@@ -148,8 +148,22 @@
 
         <?php
 
-        include "mostrarJugadores.php";
+        include "mostrarJugador.php";
 
+        if (isset($_GET["nombre"], $_GET["numero"], $_GET["posicion"], $_GET["imagen"], $_GET["descripcion"])) {
+
+            $nombre = $_GET["nombre"];
+            $numero = $_GET["numero"];
+            $posicion = $_GET["posicion"];
+            $imgMostrar = $_GET["imagen"];
+            $imgMostrarPosicion = $_GET["imagenPosicion"];
+            $descripcion = $_GET["descripcion"];
+
+            mostrarJugadorEdicion($nombre, $numero, $imgMostrar, $imgMostrarPosicion, $descripcion, $posicion);
+
+        }
+
+        include "modalesEdiciones.php";
 
         ?>
 
