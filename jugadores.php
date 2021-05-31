@@ -137,7 +137,7 @@
 
 
     <!-- Div container lista de jugadores -->
-    <div class="container d-flex rounded flex-row mt-4">
+    <div class="container d-flex flex-column flex-md-row flex-lg-row flex-xl-row flex-xxl-row rounded flex-row mt-4">
 
 
         <!-- No hay resultados -->
@@ -145,37 +145,13 @@
         <!-- Fin no hay resultados -->
 
         <!-- Div tarjeta -->
-        <div id="tarjetaJugador" class="bg-light p-3 d-flex me-4 mt-4 flex-wrap">
 
-            <div class="me-4">
-                <img id="imgJugador" class="rounded-circle border" src="imgJugadores/fillol.jpg">
-            </div>
+        <?php
 
-            <div class="d-flex flex-column me-2">
-
-                <div class="d-flex">
-                    <p class="text-dark mb-0">1&nbsp-&nbsp</p>
-                    <p class="text-dark fw-bolder mb-0">Ubaldo Fillol</p>
-                </div>
-
-                <img class="mt-2" style="width: 2em" src="imgPosicion/arquero.png">
+        include "mostrarJugador.php";
 
 
-                <a class="mt-3 bg-dark text-decoration-none text-center text-light rounded">Perfil</a>
-
-                <?php
-                if (isset($_SESSION["nombre"])) {
-                    ?>
-                    <a class="mt-2 bg-dark text-decoration-none text-center text-light rounded">Editar</a>
-                    <a class="mt-2 bg-danger text-decoration-none text-center text-light rounded">Eliminar</a>
-
-                    <?php
-                }
-                ?>
-
-            </div>
-
-        </div>
+        ?>
 
         <!-- Fin Div tarjeta -->
 
