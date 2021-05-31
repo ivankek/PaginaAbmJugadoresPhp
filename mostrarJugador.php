@@ -37,7 +37,7 @@ while ($fila = mysqli_fetch_array($result)) {
 
     echo "<div class='ms-4 ms-lg-3 mt-4'>";
     echo '<div class="card" style="width: 15rem;">';
-    echo "<img src='$imgMostrar' class='card-img-top' alt='$nombre'>";
+    echo "<img src='$imgMostrar' class='card-img-top' style='height: 16rem;' alt='$nombre'>";
     echo '<div class="card-body">';
     echo '<div class="d-flex">';
     echo "<h5 class='card-title text-primary'>$numero</h5>";
