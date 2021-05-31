@@ -50,6 +50,27 @@ if (isset($_GET["descripcion"])) {
 
 if (isset($_FILES["file"]["tmp_name"])) {
 
+
+    if (isset($_POST["imagenVieja"])) {
+
+        $fotoVieja = $_POST["imagenVieja"];
+        $delimitador = explode("./imgJugadores/", $fotoVieja);
+        $archivoBorrar = implode($delimitador);
+
+        $directorio = "./imgJugadores/";
+        $leerDirectorio = scandir($directorio);
+        foreach ($leerDirectorio as $img) {
+
+            if ($img == $archivoBorrar) {
+                unlink($fotoVieja);
+
+
+            }
+
+        }
+
+    }
+
     $idJugador = $_POST["textId"];
     $nombreJugador = $_POST["nombre"];
     $nuevaImagen = $_FILES["file"]["name"];
@@ -59,6 +80,7 @@ if (isset($_FILES["file"]["tmp_name"])) {
     $fijarArchivo = $rutaParaGuardar . $nuevoNombreJugador;
     $tipoDeArchivo = strtolower(pathinfo($_FILES["file"]["name"], PATHINFO_EXTENSION));
     $nombreImagen = $nuevoNombreJugador . "." . $tipoDeArchivo;
+
 
     $editar = "UPDATE Jugador set imagen='$nombreImagen'  where numero = '$idJugador'";
     $conexion->query($editar);

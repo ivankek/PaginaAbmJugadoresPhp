@@ -5,6 +5,6 @@ session_unset();
 
 session_destroy();
 
-header("location: jugadores.php");
+header("location: index.php");
 
 ?>

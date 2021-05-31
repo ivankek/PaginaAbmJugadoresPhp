@@ -140,6 +140,7 @@ require "conexion.php";
                         <label for='validationTextarea' class='form-label'>Seleccione una nueva imágen</label>
                         <input class='' name='textId' type='hidden' value='<?php echo $numero ?>'>
                         <input class='' name='nombre' type='hidden' value='<?php echo $nombre ?>'>
+                        <input class='' name='imagenVieja' type='hidden' value='<?php echo $imgMostrar ?>'>
                         <input type='file' name='file' class='form-control' aria-label='file example'
                                value='<?php echo './imgJugadores/' . $nombre ?>' required>
                         <div class='invalid-feedback'>Example invalid form file feedback</div>
