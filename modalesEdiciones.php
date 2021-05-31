@@ -141,7 +141,7 @@ require "conexion.php";
                         <input class='' name='textId' type='hidden' value='<?php echo $numero ?>'>
                         <input class='' name='nombre' type='hidden' value='<?php echo $nombre ?>'>
                         <input type='file' name='file' class='form-control' aria-label='file example'
-                               value='<?php echo 'recursos/imgPokemon/' . $nombre ?>' required>
+                               value='<?php echo './imgJugadores/' . $nombre ?>' required>
                         <div class='invalid-feedback'>Example invalid form file feedback</div>
                     </div>
 

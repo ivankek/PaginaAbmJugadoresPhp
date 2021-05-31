@@ -17,7 +17,7 @@ function mostrarJugador($nombre, $numero, $imgMostrar, $imgMostrarPosicion, $des
 </svg></a>";
         echo "<ul class='dropdown-menu' aria-labelledby='dropdownMenuLink'>";
         echo "<li><a class='dropdown-item' href='modificarJugador.php?numero=$numero&nombre=$nombre&descripcion=$descripcion&posicion=$posicion&imagen=$imgMostrar&imagenPosicion=$imgMostrarPosicion'>Editar</a></li >";
-        echo "<li><a href='borrarJugador.php?id=$numero' class='dropdown-item'>Eliminar</a></li>";
+        echo "<li><a href='borrarJugador.php?id=$numero&imagen=$imgMostrar' class='dropdown-item'>Eliminar</a></li>";
 
         echo '</ul>';
         echo '</div>';
@@ -55,7 +55,7 @@ function mostrarJugadorEdicion($nombre, $numero, $imgMostrar, $imgMostrarPosicio
 </svg></a>";
         echo "<ul class='dropdown-menu' aria-labelledby='dropdownMenuLink'>";
 
-        echo "<li><a href='borrarJugador.php?id=$numero' class='dropdown-item'>Eliminar</a></li>";
+        echo "<li><a href='borrarJugador.php?id=$numero&imagen=$imgMostrar' class='dropdown-item'>Eliminar</a></li>";
 
         echo '</ul>';
         echo '</div>';

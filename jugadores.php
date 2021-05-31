@@ -125,7 +125,7 @@
                     </div>
                     <div class="modal-footer">
                         <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Cerrar</button>
-                        <button class="  fw-bolder btn btn-primary" type="submit" value="loguear">Agregar Jugador
+                        <button class="fw-bolder btn btn-primary" type="submit" value="loguear">Agregar Jugador
                         </button>
                     </div>
                 </form>
@@ -134,7 +134,6 @@
     </div>
 
     <!--Final modal agregar jugador-->
-
 
     <!-- Div container lista de jugadores -->
     <div class="container-fluid flex-wrap d-flex flex-column justify-content-center flex-md-row flex-lg-row flex-xl-row flex-xxl-row rounded flex-row mt-4">
@@ -149,7 +148,6 @@
         <?php
 
         include "mostrarJugadores.php";
-
 
         ?>
 
