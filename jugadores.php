@@ -26,10 +26,10 @@
     <div class="mt-5">
         <h3 class="text-center text-light">Todos los jugadores disponibles para que elijas</h3>
 
-        <form class="d-flex mt-5 justify-content-center">
+        <form action="jugadores.php" class="d-flex mt-5 justify-content-center">
             <div id="buscador" class="input-group">
-                <input id="buscar" type="search" class="form-control"
-                       placeholder="Buscar jugador por nombre, posición o número"
+                <input name="busqueda" id="buscar" type="search" class="form-control"
+                       placeholder="Buscar jugador por nombre, posición o número."
                        style="background-color: transparent; box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.65); border-color: transparent;">
                 <button type="submit" style="z-index: 100; box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.65);"
                         class="input-group-text" id="basic-addon1">
@@ -147,8 +147,33 @@
 
         <?php
 
+        require "conexion.php";
+
+
         include "mostrarJugadores.php";
 
+        $array = [];
+
+        if (isset($_GET["busqueda"])) {
+            $resultadoBusqueda = mostrarJugadores($result = $conexion->query($busquedaJugador));
+
+            $filas = $result->num_rows;
+
+            if ($filas == 0) {
+
+                echo "<div class='d-flex flex-column'>";
+                echo "<div class='mt-3'>";
+                echo "<h3 class='text-center text-light'>No se encontraron resultados.</h3>";
+                echo "</div>";
+                echo "<div class='d-flex flex-wrap justify-content-lg-center mt-3'>";
+                mostrarJugadores($result = $conexion->query($mostrarTodosLosJugadores));
+                echo "</div>";
+                echo "</div>";
+            }
+
+        } else {
+            mostrarJugadores($result = $conexion->query($mostrarTodosLosJugadores));
+        }
         ?>
 
         <!-- Fin Div tarjeta -->
