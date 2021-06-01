@@ -45,7 +45,7 @@
 
         }
 
-        echo "<img class='border border-5 ms-4 col-10 col-md-5 col-lg-4' src='$imgMostrar'>";
+        echo "<img class='border border-5 ms-4 col-10 col-md-5 col-lg-4 h-25' src='$imgMostrar'>";
         echo "<div class='d-flex flex-column'>";
         echo "<div class='d-flex justify-content-center justify-content-md-start justify-content-lg-start justify-content-xl-start'>";
         echo "<h2 class='mt-3 mt-lg-0 mt-md-0 mt-xl-0 ms-0 ms-md-3 ms-lg-5 ms-xl-5 text-primary'>Nombre:&nbsp</h2>";
@@ -63,7 +63,7 @@
         echo "</div>";
         echo "<div class='d-flex flex-column justify-content-center justify-content-md-start justify-content-lg-start justify-content-xl-start'>";
         echo "<h2 class='text-center text-md-start text-lg-start text-xl-start mt-3 mt-lg-0 mt-md-0 mt-xl-0 ms-0 ms-md-3 ms-lg-5 ms-xl-5 text-primary'>Descripción:&nbsp</h2>";
-        echo "<p class='text-center text-md-start text-lg-start text-xl-start mt-1 mt-lg-0 mt-md-0 mt-xl-0 ms-0 ms-md-3 ms-lg-5 ms-xl-5 fs-2'>$descripcion</p>";
+        echo "<p class='text-center text-md-start text-lg-start text-xl-start mt-1 mt-lg-0 mt-md-0 mt-xl-0 ms-0 ms-md-3 ms-lg-5 ms-xl-5 fs-5'>$descripcion</p>";
         echo "</div>";
         echo "</div>";
 
