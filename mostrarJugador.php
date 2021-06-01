@@ -28,7 +28,7 @@ function mostrarJugador($nombre, $numero, $imgMostrar, $imgMostrarPosicion, $des
     echo '<h5 class="mt-1">Posición:</h5>';
     echo "<img class='mt-2 ms-2 align-self-start' style='width: 2em' src='$imgMostrarPosicion'>";
     echo '</div>';
-    echo "<a href='modificarJugador.php?numero=$numero&nombre=$nombre&descripcion=$descripcion&posicion=$posicion&imagen=$imgMostrar&imagenPosicion=$imgMostrarPosicion' class='btn btn-primary mt-2'>Ver Perfil</a>";
+    echo "<a href='mostrarPantallaJugador.php?numero=$numero&nombre=$nombre&descripcion=$descripcion&posicion=$posicion&imagen=$imgMostrar&imagenPosicion=$imgMostrarPosicion' class='btn btn-primary mt-2'>Ver Perfil</a>";
     echo '</div>';
     echo '</div>';
     echo '</div>';
@@ -71,7 +71,7 @@ function mostrarJugadorEdicion($nombre, $numero, $imgMostrar, $imgMostrarPosicio
     echo "<a data-bs-toggle='modal' data-bs-target='#edicionDescripción' class='bg-dark col-6 ms-1 mt-1 text-decoration-none text-light bg-dark rounded text-center'>Descripción</a>";
 
     echo '</div>';
-    echo '<a href="#" class="btn btn-primary mt-2">Ver Perfil</a>';
+    echo "<a href='mostrarPantallaJugador.php?numero=$numero&nombre=$nombre&descripcion=$descripcion&posicion=$posicion&imagen=$imgMostrar&imagenPosicion=$imgMostrarPosicion' class='btn btn-primary mt-2'>Ver Perfil</a>";
     echo '</div>';
     echo '</div>';
     echo '</div>';

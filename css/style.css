@@ -21,7 +21,7 @@ body {
     width: 10em;
 }
 
-#tarjetaJugador{
+#tarjetaJugador {
     border-radius: 15px;
     border-width: thin;
     border-style: solid;
@@ -43,5 +43,6 @@ body {
     #imgJugador {
         width: 6em;
     }
+
 
 }
